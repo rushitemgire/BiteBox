@@ -216,3 +216,63 @@ nav img {
     color: white;
     text-align: center;
 }
+.cart {
+    margin-top: -50px;
+}
+table {
+    color: aliceblue;
+    width: 80%;
+    height: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+    /* border: 1px solid white; */
+}
+.items img {
+    width: 90%;
+    height: auto;
+}
+.items {
+    display: grid;
+    grid-template-columns: 150px 220px;
+    gap: 5%;
+}
+th {
+    background-color: red;
+    padding: 2% 0%;
+    border: 1px solid white;
+}
+.rows th:first-child {
+    border-top-left-radius: 20px;
+}
+.rows th:last-child {
+    border-top-right-radius: 20px;
+}
+/* .rows th:nth-child(2) {
+    margin-left: 50px;
+} */
+td {
+    text-align: center;
+    border: 1px solid white;
+}
+td button {
+    background-color: red;
+    border-radius: 7px;
+    padding: 7px 10%;
+}
+.pad td {
+    padding: 15px 0px;
+}
+.pad td:first-child {
+    border-bottom-left-radius: 15px;
+}
+.pad td:last-child {
+    border-bottom-right-radius: 15px;
+}
+.one {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+#heads {
+    color: red;
+    text-align: center;
+}

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double+Ink:wght@100..900&family=Bitcount+Ink:wght@100..900&family=Bungee+Tint&family=Dancing+Script:wght@400..700&family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Edu+NSW+ACT+Hand+Pre:wght@400..700&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Great+Vibes&family=Hind:wght@300;400;500;600;700&family=Lobster&family=Noto+Serif+Todhri&family=Pacifico&family=Playwrite+IN+Guides&family=Smooch+Sans:wght@100..900&family=Teko:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double+Ink:wght@100..900&family=Bitcount+Ink:wght@100..900&family=Bungee+Tint&family=Dancing+Script:wght@400..700&family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Edu+NSW+ACT+Hand+Pre:wght@400..700&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Great+Vibes&family=Hind:wght@300;400;500;600;700&family=Lobster&family=Noto+Serif+Todhri&family=Pacifico&family=Playwrite+IN+Guides&family=Satisfy&family=Smooch+Sans:wght@100..900&family=Teko:wght@300..700&display=swap');
 
 * {
     background-color: rgb(2, 2, 2);
@@ -6,11 +6,16 @@
 }
 
 body {
-  font-family: "Smooch Sans", sans-serif;
+  /* font-family: "Smooch Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 350;
   font-style: normal;
-  font-size: 25px;
+  font-size: 25px; */
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 22px;
 }
 
 nav {
@@ -134,4 +139,80 @@ nav img {
 }
 .myself h1 {
     color: rgb(203, 60, 60);
+}
+
+.menu-container {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 23%);
+    gap: 2%;
+    padding-left: 1.5%;
+}
+
+.card {
+    width: 100%;
+    height: auto;
+    color: white;
+    background-color: rgb(55, 55, 54);
+    border-radius: 15px;
+}
+.card img {
+    width: 94%;
+    height: auto;
+    border-radius: 15px;
+    margin: 3%;
+}
+.menu h2 {
+    color: rgb(198, 79, 11);
+    text-align: center;
+}
+.card h3, .card p, .card span {
+    margin: 0px 5%;
+    text-align: center;
+    background-color: rgb(55, 55, 54);
+}
+.card h3 {
+    color: rgb(3, 189, 118);
+    text-shadow: 2px 2px 5px red;
+}
+
+.card span {
+    margin-left: 21%;
+}
+.card button {
+    width: 8vw;
+    height: 5vh;
+    border-radius: 7px;
+    margin-bottom: 3%;
+    background-color: red;
+    color: rgb(42, 42, 42);
+    font-weight: bold;
+}
+.card button:hover {
+    background-color: yellow;
+    color: black;
+}
+.icons {
+    width: 80%;
+    height: auto;
+    margin: 0% 10%;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 2%;
+}
+.icon-cards {
+    width: 100%;
+    height: auto;
+}
+.icon-cards img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    border: 1px solid white;
+    padding: 5%;
+}
+.icon-cards p {
+    color: white;
+    text-align: center;
 }

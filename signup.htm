@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
+    <title>SignUp Page</title>
     <link rel="icon" type="image/png" href="Images/favicon_f.png">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -25,20 +25,22 @@
     </header>
 
     <section class="auth-container">
-        <div class="auth">
-            <h2>Login Form</h2>
+        <div class="auth" id="register">
+            <h2>SignUp Here</h2>
 
-            <form action="index.html">
-                <input type="text" placeholder="Enter your Username" required>
-                <input type="password" placeholder="Enter the Password" required>
-                <button type="submit">Login</button>
+            <form action="login.html">
+                <input type="text" placeholder="Enter full name" required>
+                <input type="text" placeholder="Enter Username" required>
+                <input type="email" placeholder="Enter your email" required>
+                <input type="number" placeholder="Enter your Gender" required>
+                <input type="password" placeholder="Enter Password" required>
+                <input type="password" placeholder="Confirm Password" required>
+                <button type="submit">SignUp</button>
             </form>
 
-            <a href="signup.htm" id="forget">Forgot Password?</a>
-            <p>Don't have an account? <a href="signup.htm">Click</a> here</p>
+            <p>Already have an account? <a href="login.html">Login</a> here</p>
         </div>
     </section>
-
     
 </body>
 </html>

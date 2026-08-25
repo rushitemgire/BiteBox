@@ -349,3 +349,88 @@ td button {
 #register {
     margin-top: 0%;
 }
+.deals-page {
+    width: 100%;
+    height: auto;
+}
+.deal-hero {
+    width: 80%;
+    height: auto;
+    background-color: gray;
+    border: 2px solid white;
+    margin: 3vh 10%;
+    border-radius: 15px;
+}
+.deal-hero h2, .deal-hero p {
+    background-color: gray;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+.combo-section {
+    width: 100%;
+    height: auto;
+}
+.combo-section h2 {
+    color: White;
+    font-family: 'Times New Roman', Times, serif;
+    padding-left: 20px;
+}
+.combo-container {
+    width: 90%;
+    height: auto;
+    margin: 0% 5%;
+    /* border: 2px solid white; */
+    display: grid;
+    gap: 3%;
+    grid-template-columns: repeat(3, 1fr);
+}
+.deal-card {
+    /* border: 2px solid greenyellow; */
+    background-color: rgb(54, 53, 53);
+    border-radius: 15px;
+}
+.deal-card img {
+    width: 80%;
+    height: auto;
+    margin: 3% 10%;
+    border: 2px solid white;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.deal-card h3, .deal-card p, .deal-card h4, .deal-card h4 span {
+    background-color: rgb(54, 53, 53);
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.deal-card button {
+    width: 40%;
+    height: 5vh;
+    color: aliceblue;
+    margin-left: 30%;
+    background-color: rgb(232, 36, 36);
+    border-radius: 5px;
+    margin-bottom: 3%;
+    font-size: 16px;
+    font-weight: bold;
+    border: 2px solid white;
+}
+.deal-card button:hover {
+    background-color: red;
+    cursor: pointer;
+}
+.deal-card h4 span {
+    text-decoration: line-through red;
+    color: rgb(168, 168, 168);
+}
+.deal-card span {
+    width: 60%;
+    margin-left: 20%;
+    background-color: rgb(54, 53, 53);
+    color: rgb(146, 207, 207);
+}
+.deal-card .offer {
+    color: rgb(147, 113, 147);
+}

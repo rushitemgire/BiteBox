@@ -6,6 +6,7 @@
     <title>SignUp Page</title>
     <link rel="icon" type="image/png" href="Images/favicon_f.png">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/b79e57cca8.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -28,19 +29,29 @@
         <div class="auth" id="register">
             <h2>SignUp Here</h2>
 
-            <form action="login.html">
-                <input type="text" placeholder="Enter full name" required>
-                <input type="text" placeholder="Enter Username" required>
-                <input type="email" placeholder="Enter your email" required>
-                <input type="number" placeholder="Enter your Gender" required>
-                <input type="password" placeholder="Enter Password" required>
-                <input type="password" placeholder="Confirm Password" required>
+            <form onsubmit="signUp(event)">
+                <input type="text" id="name" placeholder="Enter full name" required>
+                <input type="text" id="username" placeholder="Enter Username" required>
+                <input type="email" id="email" placeholder="Enter your email" required>
+                
+                <select id="gender" required class="select">
+                    <option value="">Select Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+
+                <input type="password" id="password1" placeholder="Enter Password" required>
+                <input type="password" id="password2" placeholder="Confirm Password" required>
                 <button type="submit">SignUp</button>
             </form>
+
+            <h3 id="message"></h3>
 
             <p>Already have an account? <a href="login.html">Login</a> here</p>
         </div>
     </section>
     
+    <script src="./Js/signup.js"></script>
 </body>
 </html>

@@ -28,17 +28,18 @@
         <div class="auth">
             <h2>Login Form</h2>
 
-            <form action="index.html">
-                <input type="text" placeholder="Enter your Username" required>
-                <input type="password" placeholder="Enter the Password" required>
-                <button type="submit">Login</button>
+            <form>
+                <input type="text" id="username" placeholder="Enter your Username" required>
+                <input type="password" id="password" placeholder="Enter the Password" required>
+                <button type="button" onclick="login()">Login</button>
             </form>
 
+            <h4 id="message" style="color: red;"></h4>
             <a href="signup.htm" id="forget">Forgot Password?</a>
             <p>Don't have an account? <a href="signup.htm">Click</a> here</p>
         </div>
     </section>
 
-    
+    <script src="./Js/login.js"></script>
 </body>
 </html>

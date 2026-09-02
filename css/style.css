@@ -471,3 +471,22 @@ td button {
         color: rgb(55, 55, 55);
     }
 }
+
+.select {
+    background-color: rgb(245, 230, 212);
+    color: black;
+    height: 6vh;
+    border-radius: 8px;
+    margin-bottom: 1.5vh;
+    border: 2px solid black;
+    text-align: center;
+    font-size: 16px;
+    color: rgb(102, 102, 102);
+}
+
+#message {
+    background-color: white;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+}

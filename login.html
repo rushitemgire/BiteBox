@@ -1,45 +1,69 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login Page</title>
-    <link rel="icon" type="image/png" href="Images/favicon_f.png">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+    <link rel="icon" type="image/png" href="Images/favicon_f.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/6a695ee2f4.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <header>
-        <nav>
-            <!-- Logo -->
-            <!-- <h2>Bite<span style="color: red;">Box</span></h2> -->
-            <a href="./index.html"><img src="Images/logo_cropped.png" alt="Logo"></a>
+      <nav>
+        <!-- Logo -->
+        <!-- <h2>Bite<span style="color: red;">Box</span></h2> -->
+        <a href="./index.html"
+          ><img src="Images/logo_cropped.png" alt="Logo"
+        /></a>
 
-            <ul type="none">
-                <li><a href="home.html">Home</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="biteDeals.html">Bite Deals</a></li>
-                <li><a href="cart.html">Cart</a></li>
-                <li><a href="login.html" target="_blank">Login</a></li>
-            </ul>
-        </nav>
+        <ul type="none">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="biteDeals.html">Bite Deals</a></li>
+          <li><a href="cart.html">Cart</a></li>
+          <li><a href="login.html" target="_blank">Login</a></li>
+        </ul>
+      </nav>
     </header>
 
     <section class="auth-container">
-        <div class="auth">
-            <h2>Login Form</h2>
+      <div class="auth">
+        <h2>Login Form</h2>
 
-            <form>
-                <input type="text" id="username" placeholder="Enter your Username" required>
-                <input type="password" id="password" placeholder="Enter the Password" required>
-                <button type="button" onclick="login()">Login</button>
-            </form>
+        <form>
+          <input
+            type="text"
+            id="username"
+            placeholder="Enter your Username"
+            required
+          />
 
-            <h4 id="message" style="color: red;"></h4>
-            <a href="signup.htm" id="forget">Forgot Password?</a>
-            <p>Don't have an account? <a href="signup.htm">Click</a> here</p>
-        </div>
+          <div class="eye" style="position: relative">
+            <input
+              type="password"
+              id="password"
+              placeholder="Enter the Password"
+              required
+            />
+
+            <span onclick="togglePassword()" class="eye-icon" style="background-color: rgb(245, 230, 212);">
+              <i class="fa-solid fa-eye" style="background-color: rgb(245, 230, 212);cursor: pointer;"></i>
+            </span>
+          </div>
+
+          <button type="button" onclick="login()">Login</button>
+        </form>
+
+        <h4 id="message" style="color: red"></h4>
+        <a href="signup.htm" id="forget">Forgot Password?</a>
+        <p>Don't have an account? <a href="signup.htm">Click</a> here</p>
+      </div>
     </section>
 
     <script src="./Js/login.js"></script>
-</body>
+  </body>
 </html>

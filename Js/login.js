@@ -39,3 +39,27 @@ function login(){
         message.innerText = 'Invalid Username or Password.'
     }
 }
+
+function togglePassword(){
+    let inputType = document.getElementById('password');
+
+    if(inputType.type === 'password')
+    {
+        inputType.type = 'text';
+    }
+    else{
+        inputType.type = 'password';
+    }
+}
+
+function togglePassword1(){
+    let inputT = document.querySelector('.pqr');
+
+    if(inputT.type === 'password')
+    {
+        inputT.type = 'text';
+    }
+    else{
+        inputT.type = 'password';
+    }
+}

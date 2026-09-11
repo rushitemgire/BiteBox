@@ -343,7 +343,10 @@ td button {
 .auth form button:hover {
     background-color: rgb(253, 6, 2);
 }
-.auth form input:focus {
+/* .auth form input:focus {
+    border: 3px solid red;
+} */
+.auth form input:hover {
     border: 3px solid red;
 }
 #register {
@@ -489,4 +492,31 @@ td button {
     text-align: center;
     font-size: 16px;
     font-family: 'Times New Roman', Times, serif;
+}
+
+.auth form .eye {
+    height: 6vh;
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: black;
+    background-color: rgb(245, 230, 212);
+    border-radius: 10px;
+    border: 2px solid black;
+    /* border-color: gray; */
+}
+.auth form #password {
+    height: 100%;
+    font-size: 16px;
+    color: black;
+    background-color: rgb(245, 230, 212);
+    border: 2px solid rgb(245, 230, 212);
+    width: 90%;
+}
+.auth form #password:focus {
+    border: none;
+    outline: none;
+}
+
+.auth form .eye:hover {
+    border: 1px solid red;
 }
